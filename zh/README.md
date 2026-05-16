@@ -1,5 +1,9 @@
 # OpenAITrade Public
 
+![OpenAITrade Banner](../assets/banner-generated.png)
+
+![OpenAITrade Logo](../assets/logo-generated.png)
+
 从 `skill.md` 开始，快速拿到数据、选策略、跑回测、看结果。
 
 免费数据，免费策略，免费工作流。
@@ -107,16 +111,16 @@ python -m pytest -q tests/test_skill_installation.py
 
 ## 去哪里找
 
-- [../openaitrade/data](/Users/f/GitHub/OpenAITrade/public_release/openaitrade/data)：免费数据接入
-- [../openaitrade/strategies](/Users/f/GitHub/OpenAITrade/public_release/openaitrade/strategies)：免费策略代码
-- [../openaitrade/backtest](/Users/f/GitHub/OpenAITrade/public_release/openaitrade/backtest)：回测引擎
-- [../openaitrade/tools](/Users/f/GitHub/OpenAITrade/public_release/openaitrade/tools)：优化工具
-- [../data/market_data](/Users/f/GitHub/OpenAITrade/public_release/data/market_data)：免费样例数据
-- [../strategy_packs](/Users/f/GitHub/OpenAITrade/public_release/strategy_packs)：结构化策略工作流资产
+- [../openaitrade/data](../openaitrade/data)：免费数据接入
+- [../openaitrade/strategies](../openaitrade/strategies)：免费策略代码
+- [../openaitrade/backtest](../openaitrade/backtest)：回测引擎
+- [../openaitrade/tools](../openaitrade/tools)：优化工具
+- [../data/market_data](../data/market_data)：免费样例数据
+- [../strategy_packs](../strategy_packs)：结构化策略工作流资产
 
 ## 继续深入
 
-- [skills/openaitrade/SKILL.md](/Users/f/GitHub/OpenAITrade/public_release/zh/skills/openaitrade/SKILL.md)
-- [docs/STRATEGIES.md](/Users/f/GitHub/OpenAITrade/public_release/zh/docs/STRATEGIES.md)
-- [docs/BACKTESTING.md](/Users/f/GitHub/OpenAITrade/public_release/zh/docs/BACKTESTING.md)
-- [docs/LIVE_TRADING.md](/Users/f/GitHub/OpenAITrade/public_release/zh/docs/LIVE_TRADING.md)
+- [skills/openaitrade/SKILL.md](skills/openaitrade/SKILL.md)
+- [docs/STRATEGIES.md](docs/STRATEGIES.md)
+- [docs/BACKTESTING.md](docs/BACKTESTING.md)
+- [docs/LIVE_TRADING.md](docs/LIVE_TRADING.md)

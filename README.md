@@ -1,6 +1,10 @@
 # OpenAITrade Public
 
-Chinese version: [zh/README.md](/Users/f/GitHub/OpenAITrade/public_release/zh/README.md)
+Chinese version: [zh/README.md](zh/README.md)
+
+![OpenAITrade Banner](assets/banner-generated.png)
+
+![OpenAITrade Logo](assets/logo-generated.png)
 
 Start with `skill.md`. Get data, pick a strategy, run a backtest, and see results fast.
 
@@ -109,16 +113,16 @@ The tested skill flow already covers:
 
 ## Find Things
 
-- [openaitrade/data](/Users/f/GitHub/OpenAITrade/public_release/openaitrade/data): free data access
-- [openaitrade/strategies](/Users/f/GitHub/OpenAITrade/public_release/openaitrade/strategies): free strategies
-- [openaitrade/backtest](/Users/f/GitHub/OpenAITrade/public_release/openaitrade/backtest): backtesting
-- [openaitrade/tools](/Users/f/GitHub/OpenAITrade/public_release/openaitrade/tools): optimization
-- [data/market_data](/Users/f/GitHub/OpenAITrade/public_release/data/market_data): bundled sample data
-- [strategy_packs](/Users/f/GitHub/OpenAITrade/public_release/strategy_packs): structured workflow assets
+- [openaitrade/data](openaitrade/data): free data access
+- [openaitrade/strategies](openaitrade/strategies): free strategies
+- [openaitrade/backtest](openaitrade/backtest): backtesting
+- [openaitrade/tools](openaitrade/tools): optimization
+- [data/market_data](data/market_data): bundled sample data
+- [strategy_packs](strategy_packs): structured workflow assets
 
 ## Go Deeper
 
-- [skills/openaitrade/SKILL.md](/Users/f/GitHub/OpenAITrade/public_release/skills/openaitrade/SKILL.md)
-- [docs/STRATEGIES.md](/Users/f/GitHub/OpenAITrade/public_release/docs/STRATEGIES.md)
-- [docs/BACKTESTING.md](/Users/f/GitHub/OpenAITrade/public_release/docs/BACKTESTING.md)
-- [docs/LIVE_TRADING.md](/Users/f/GitHub/OpenAITrade/public_release/docs/LIVE_TRADING.md)
+- [skills/openaitrade/SKILL.md](skills/openaitrade/SKILL.md)
+- [docs/STRATEGIES.md](docs/STRATEGIES.md)
+- [docs/BACKTESTING.md](docs/BACKTESTING.md)
+- [docs/LIVE_TRADING.md](docs/LIVE_TRADING.md)
