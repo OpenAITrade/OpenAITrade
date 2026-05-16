@@ -16,7 +16,35 @@ Free data. Free strategies. Free workflow.
   <img src="../assets/cheatsheet-card.png" alt="Cheat Sheet Card" width="920">
 </p>
 
-## Start Now
+## For Humans
+
+Copy and paste this to your LLM agent:
+
+```text
+Use this repository as an agent-first quant workflow.
+
+Start Now
+Install:
+python -m venv .venv && source .venv/bin/activate && pip install -e .
+
+Get data fast:
+python -c "from pathlib import Path; import pandas as pd; p=Path('data/market_data/spy.csv'); df=pd.read_csv(p); print(df.head(5).to_string(index=False))"
+
+Pick strategy fast:
+python -c "from openaitrade.strategies.factory import STRATEGIES; [print(f'{sid:24s} {cls.category:18s} {cls.name}') for sid, cls in STRATEGIES.items()]"
+
+See results fast:
+python examples/quickstart.py
+
+Start with the skill:
+python -m pytest -q tests/test_skill_installation.py
+```
+
+If you want to read first, keep going. If not, let your agent do the setup and validation for you.
+
+## For LLM Agents
+
+Start Now
 
 Install:
 

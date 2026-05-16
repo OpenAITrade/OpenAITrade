@@ -16,7 +16,35 @@
   <img src="../assets/cheatsheet-card.png" alt="Cheat Sheet Card" width="920">
 </p>
 
-## 现在开始
+## 给人类用户
+
+把下面这段直接复制给你的 LLM Agent：
+
+```text
+把这个仓库当成一个 agent-first 量化工作流来使用。
+
+现在开始
+安装：
+python -m venv .venv && source .venv/bin/activate && pip install -e .
+
+先拿数据：
+python -c "from pathlib import Path; import pandas as pd; p=Path('data/market_data/spy.csv'); df=pd.read_csv(p); print(df.head(5).to_string(index=False))"
+
+先选策略：
+python -c "from openaitrade.strategies.factory import STRATEGIES; [print(f'{sid:24s} {cls.category:18s} {cls.name}') for sid, cls in STRATEGIES.items()]"
+
+先看结果：
+python examples/quickstart.py
+
+先用 Skill：
+python -m pytest -q tests/test_skill_installation.py
+```
+
+如果你想自己先看文档，可以继续往下读；如果不是，直接让 agent 帮你完成安装和验证。
+
+## 给 LLM Agents
+
+现在开始
 
 安装：
 
