@@ -1,14 +1,20 @@
-# OpenAITrade Public
+<p align="center">
+  <img src="../assets/logo-generated.png" alt="OpenAITrade Logo" width="280">
+</p>
 
-![OpenAITrade Banner](../assets/banner-generated.png)
+<h1 align="center">OpenAITrade</h1>
 
-![OpenAITrade Logo](../assets/logo-generated.png)
+<p align="center">
+  <img src="../assets/banner-generated.png" alt="OpenAITrade Banner" width="920">
+</p>
 
 Start with `skill.md`. Get data, pick a strategy, run a backtest, and see results fast.
 
 Free data. Free strategies. Free workflow.
 
-![Cheat Sheet Card](../assets/cheatsheet-card.png)
+<p align="center">
+  <img src="../assets/cheatsheet-card.png" alt="Cheat Sheet Card" width="920">
+</p>
 
 ## Start Now
 

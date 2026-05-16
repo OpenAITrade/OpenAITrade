@@ -1,14 +1,20 @@
-# OpenAITrade Public
+<p align="center">
+  <img src="../assets/logo-generated.png" alt="OpenAITrade Logo" width="280">
+</p>
 
-![OpenAITrade Banner](../assets/banner-generated.png)
+<h1 align="center">OpenAITrade</h1>
 
-![OpenAITrade Logo](../assets/logo-generated.png)
+<p align="center">
+  <img src="../assets/banner-zh-generated.png" alt="OpenAITrade 中文 Banner" width="920">
+</p>
 
 从 `skill.md` 开始，快速拿到数据、选策略、跑回测、看结果。
 
 免费数据，免费策略，免费工作流。
 
-![Cheat Sheet Card](../assets/cheatsheet-card.png)
+<p align="center">
+  <img src="../assets/cheatsheet-card.png" alt="Cheat Sheet Card" width="920">
+</p>
 
 ## 现在开始
 
