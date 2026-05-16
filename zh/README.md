@@ -25,7 +25,7 @@
 
 现在开始
 安装：
-python -m venv .venv && source .venv/bin/activate && pip install -e .
+python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
 
 先拿数据：
 python -c "from pathlib import Path; import pandas as pd; p=Path('data/market_data/spy.csv'); df=pd.read_csv(p); print(df.head(5).to_string(index=False))"
@@ -49,7 +49,7 @@ python -m pytest -q tests/test_skill_installation.py
 安装：
 
 ```bash
-python -m venv .venv && source .venv/bin/activate && pip install -e .
+python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
 ```
 
 先拿数据：

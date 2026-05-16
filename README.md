@@ -29,7 +29,7 @@ Use this repository as an agent-first quant workflow.
 
 Start Now
 Install:
-python -m venv .venv && source .venv/bin/activate && pip install -e .
+python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
 
 Get data fast:
 python -c "from pathlib import Path; import pandas as pd; p=Path('data/market_data/spy.csv'); df=pd.read_csv(p); print(df.head(5).to_string(index=False))"
@@ -53,7 +53,7 @@ Start Now
 Install:
 
 ```bash
-python -m venv .venv && source .venv/bin/activate && pip install -e .
+python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
 ```
 
 Get data fast:
