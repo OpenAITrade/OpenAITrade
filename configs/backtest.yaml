@@ -1,0 +1,20 @@
+data:
+  source: synthetic
+  symbols: [SPY, QQQ, IWM, TLT]
+  start: "2018-01-01"
+  end: "2024-12-31"
+  timeframe: 1d
+  path: ""
+
+strategy:
+  id: topn_momentum
+  params:
+    lookback: 120
+    top_k: 2
+
+backtest:
+  initial_cash: 100000
+  commission_rate: 0.0005
+  slippage_rate: 0.0002
+
+output_dir: results/topn_momentum_demo

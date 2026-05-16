@@ -1,0 +1,20 @@
+data:
+  source: synthetic
+  symbols: [SPY]
+  start: "2018-01-01"
+  end: "2024-12-31"
+  timeframe: 1d
+  path: ""
+
+strategy:
+  id: sma_crossover
+  params:
+    short_window: 20
+    long_window: 60
+
+backtest:
+  initial_cash: 100000
+  commission_rate: 0.0005
+  slippage_rate: 0.0002
+
+output_dir: results/sma_crossover_demo

@@ -1,0 +1,4 @@
+max_order_value: 10000
+max_position_weight: 0.25
+max_gross_leverage: 1.0
+allow_short: false

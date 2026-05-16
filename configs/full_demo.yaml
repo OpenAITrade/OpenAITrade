@@ -1,0 +1,17 @@
+data:
+  source: synthetic
+  symbols: [SPY, QQQ, IWM, EFA, TLT, GLD]
+  start: '2016-01-01'
+  end: '2025-01-01'
+  timeframe: 1d
+strategy:
+  id: low_vol_momentum
+  params:
+    momentum_window: 120
+    vol_window: 60
+    top_k: 3
+backtest:
+  initial_cash: 100000
+  commission_rate: 0.0005
+  slippage_rate: 0.0002
+output_dir: results/full_demo

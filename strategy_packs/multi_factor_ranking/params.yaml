@@ -1,0 +1,3 @@
+momentum_window: 120
+vol_window: 60
+top_k: 5

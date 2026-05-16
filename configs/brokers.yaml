@@ -1,0 +1,14 @@
+paper:
+  initial_cash: 100000
+ccxt:
+  exchange_id: binance
+  sandbox: true
+ibkr:
+  host: 127.0.0.1
+  port: 7497
+  client_id: 1
+  dry_run: true
+futu:
+  host: 127.0.0.1
+  port: 11111
+  dry_run: true

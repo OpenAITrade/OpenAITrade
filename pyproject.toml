@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openaitrade-public"
+version = "1.0.0"
+description = "Public subset of OpenAITrade: data adapters, strategy code, strategy docs, and skill artifacts."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "OpenAITrade Contributors"}]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+data = ["yfinance>=0.2.40", "akshare>=1.13.0", "baostock>=0.8.8", "ccxt>=4.0.0", "openbb>=4.0.0"]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["openaitrade*"]
+
