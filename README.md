@@ -25,23 +25,43 @@ Free data. Free strategies. Free workflow.
 Copy and paste this to your LLM agent:
 
 ```text
-Use this repository as an agent-first quant workflow.
+You are setting up and validating the OpenAITrade repository as an agent-first quant workflow.
 
-Start Now
-Install:
+Working directory: the repository root.
+
+Your goals:
+1. Install the project with dev dependencies.
+2. Prove that bundled market data can be loaded.
+3. Prove that built-in strategies can be listed.
+4. Prove that a sample backtest runs.
+5. Prove that the skill flow validation passes.
+
+Run these commands in order:
+
 python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
-
-Get data fast:
 python -c "from pathlib import Path; import pandas as pd; p=Path('data/market_data/spy.csv'); df=pd.read_csv(p); print(df.head(5).to_string(index=False))"
-
-Pick strategy fast:
 python -c "from openaitrade.strategies.factory import STRATEGIES; [print(f'{sid:24s} {cls.category:18s} {cls.name}') for sid, cls in STRATEGIES.items()]"
-
-See results fast:
 python examples/quickstart.py
-
-Start with the skill:
 python -m pytest -q tests/test_skill_installation.py
+
+Constraints:
+- Do not modify repository files unless installation or validation fails and you need to explain why.
+- Prefer reporting exact command results instead of paraphrasing vaguely.
+
+Success criteria:
+- The install completes successfully.
+- The data command prints rows from the bundled sample dataset.
+- The strategy command prints the built-in strategy list.
+- The quickstart example runs successfully.
+- tests/test_skill_installation.py passes.
+
+At the end, give a short report with:
+- install status
+- data status
+- strategy status
+- backtest status
+- skill validation status
+- any blocker or fix needed
 ```
 
 If you want to read first, keep going. If not, let your agent do the setup and validation for you.

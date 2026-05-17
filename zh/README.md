@@ -21,23 +21,43 @@
 把下面这段直接复制给你的 LLM Agent：
 
 ```text
-把这个仓库当成一个 agent-first 量化工作流来使用。
+请把这个仓库作为一个 agent-first 的量化工作流来完成安装与验证。
 
-现在开始
-安装：
+工作目录：仓库根目录。
+
+你的目标：
+1. 安装项目及 dev 依赖。
+2. 证明仓库内置市场数据可以被成功读取。
+3. 证明内置策略可以被成功列出。
+4. 证明样例回测可以成功运行。
+5. 证明 skill 工作流验证可以通过。
+
+按顺序执行下面这些命令：
+
 python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
-
-先拿数据：
 python -c "from pathlib import Path; import pandas as pd; p=Path('data/market_data/spy.csv'); df=pd.read_csv(p); print(df.head(5).to_string(index=False))"
-
-先选策略：
 python -c "from openaitrade.strategies.factory import STRATEGIES; [print(f'{sid:24s} {cls.category:18s} {cls.name}') for sid, cls in STRATEGIES.items()]"
-
-先看结果：
 python examples/quickstart.py
-
-先用 Skill：
 python -m pytest -q tests/test_skill_installation.py
+
+约束：
+- 除非安装或验证失败并且必须解释原因，否则不要修改仓库文件。
+- 优先给出精确命令输出，不要只做模糊总结。
+
+成功标准：
+- 安装成功完成。
+- 数据命令成功打印内置样例数据。
+- 策略命令成功打印内置策略列表。
+- quickstart 示例成功运行。
+- tests/test_skill_installation.py 成功通过。
+
+最后给一个简短报告，包含：
+- 安装状态
+- 数据状态
+- 策略状态
+- 回测状态
+- skill 验证状态
+- 是否存在阻塞或需要修复的问题
 ```
 
 如果你想自己先看文档，可以继续往下读；如果不是，直接让 agent 帮你完成安装和验证。
