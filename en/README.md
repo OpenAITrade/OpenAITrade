@@ -64,37 +64,39 @@ If you want to read first, keep going. If not, let your agent do the setup and v
 
 ## For LLM Agents
 
-Start Now
+Execute this workflow from the repository root.
 
-Install:
+Goals:
+
+1. Install the project with dev dependencies.
+2. Load bundled market data successfully.
+3. List built-in strategies successfully.
+4. Run the quickstart backtest successfully.
+5. Validate the skill workflow successfully.
+
+Run these commands in order:
 
 ```bash
 python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
-```
-
-Get data fast:
-
-```bash
 python -c "from pathlib import Path; import pandas as pd; p=Path('data/market_data/spy.csv'); df=pd.read_csv(p); print(df.head(5).to_string(index=False))"
-```
-
-Pick strategy fast:
-
-```bash
 python -c "from openaitrade.strategies.factory import STRATEGIES; [print(f'{sid:24s} {cls.category:18s} {cls.name}') for sid, cls in STRATEGIES.items()]"
-```
-
-See results fast:
-
-```bash
 python examples/quickstart.py
-```
-
-Start with the skill:
-
-```bash
 python -m pytest -q tests/test_skill_installation.py
 ```
+
+Expected outcome:
+
+- installation succeeds
+- the data command prints sample rows
+- the strategy command prints the built-in strategy list
+- the quickstart example runs
+- `tests/test_skill_installation.py` passes
+
+If any step fails, report:
+
+- which command failed
+- the exact error
+- whether the issue is install-related, data-related, strategy-related, backtest-related, or skill-related
 
 ## You Get
 

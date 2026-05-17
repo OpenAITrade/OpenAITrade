@@ -64,37 +64,39 @@ python -m pytest -q tests/test_skill_installation.py
 
 ## 给 LLM Agents
 
-现在开始
+请从仓库根目录执行下面这套流程。
 
-安装：
+目标：
+
+1. 安装项目及 dev 依赖。
+2. 成功读取仓库内置市场数据。
+3. 成功列出内置策略。
+4. 成功运行 quickstart 回测。
+5. 成功通过 skill 工作流验证。
+
+按顺序执行下面这些命令：
 
 ```bash
 python -m venv .venv && source .venv/bin/activate && pip install -e ".[dev]"
-```
-
-先拿数据：
-
-```bash
 python -c "from pathlib import Path; import pandas as pd; p=Path('data/market_data/spy.csv'); df=pd.read_csv(p); print(df.head(5).to_string(index=False))"
-```
-
-先选策略：
-
-```bash
 python -c "from openaitrade.strategies.factory import STRATEGIES; [print(f'{sid:24s} {cls.category:18s} {cls.name}') for sid, cls in STRATEGIES.items()]"
-```
-
-先看结果：
-
-```bash
 python examples/quickstart.py
-```
-
-先用 Skill：
-
-```bash
 python -m pytest -q tests/test_skill_installation.py
 ```
+
+预期结果：
+
+- 安装成功
+- 数据命令打印样例数据
+- 策略命令打印内置策略列表
+- quickstart 示例成功运行
+- `tests/test_skill_installation.py` 成功通过
+
+如果任一步骤失败，请报告：
+
+- 失败的是哪条命令
+- 精确报错内容
+- 问题属于安装、数据、策略、回测还是 skill 验证
 
 ## 你会得到
 
